@@ -98,6 +98,16 @@
     </div>
 </div>
     
+    <div>Click ME!!!!</div>
+    <script>
+      $('div').hover(function (e){
+        $('div').css('color','red');
+      },(function (e){
+          $('div').css('color','blue');
+      })
+        
+    </script>
+    <a href="./newhtml.html">Odkaz na NEWHTML.html</a>
     <!-- footer start -->
     <%@include file="pices/footer.jsp" %>
     <!-- footer end -->
