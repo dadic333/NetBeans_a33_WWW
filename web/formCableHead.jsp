@@ -11,8 +11,8 @@
     <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/styl.css" rel="stylesheet">
     <link href="css/formStyl.css" rel="stylesheet">
-    
-    <script src=""></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
     <title>JSP Page</title>
   </head>
@@ -46,6 +46,7 @@
     <%@include file="pices/footer.jsp" %>
     <!-- footer end -->
     <script defer src="js/jquery-3.3.1.min.js"></script>
-    <script defer src="bootstrap/js/bootstrap.min.js"></script>        
+    <script defer src="bootstrap/js/bootstrap.min.js"></script>
+    <script src='js/newjavascript.js'></script>
   </body>
 </html>
