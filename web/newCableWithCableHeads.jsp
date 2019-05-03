@@ -35,7 +35,14 @@
   
   HttpSession sess = request.getSession();
   sess.setAttribute("newCableHead", newcab);
-  request.setAttribute("newCableHead", newcab);
+  Integer val;
+  val = (Integer) request.getAttribute("reqVal");
+  if (val==null)
+    val = 0;
+  else
+    val = val + 1;
+  
+  request.setAttribute("reqVal", val);
 
   System.out.println("______________newcab_____________");
   System.out.println("name= "+newcab.getName()+"; building= "+newcab.getBuilding()+"; note= "+newcab.getNote());

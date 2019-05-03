@@ -51,7 +51,14 @@
             <td>${cableHead.note}</td>
             <td>${cableHead.outputcount}</td>
           </tr>
-          <c:set var="cable" target="Cablehead" value="<%= request.getParameter("newCableHead") %>" />
+          <c:set var="val" target="Integer" value="<%= request.getAttribute("reqVal")%>" />
+          <tr>
+            <td>val ${val}</td>
+            <td>${val}</td>
+            <td>${val}</td>
+            <td>${val}</td>
+          </tr>
+          <c:set var="cable" value="<%= request.getAttribute("cableHead") %>" />
           <tr>  
             <td>request ${cable.id}</td>
             <td>${cable.name}</td>
