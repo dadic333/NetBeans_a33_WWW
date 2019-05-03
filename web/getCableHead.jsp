@@ -1,9 +1,7 @@
 <%@page import="moje.entity.Cablehead"%>
 <%@page import="org.json.JSONObject"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-
-
+<% request.setCharacterEncoding("utf-8"); %>
 <%  
   int intId = Integer.parseInt(request.getParameter("id"));
 %>

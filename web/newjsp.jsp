@@ -1,13 +1,10 @@
-<%-- 
-    Document   : newjsp
-    Created on : 11.4.2019, 17:11:25
-    Author     : Honza
---%>
 <%@page import="moje.entity.Cablehead"%>
 <%@page import="java.util.List"%>
 <%@page import="moje.entity.Cabheadoutput"%>
-<%request.setCharacterEncoding("UTF-8");
-  response.setCharacterEncoding("UTF-8");%>
+<%
+  request.setCharacterEncoding("UTF-8");
+  response.setCharacterEncoding("UTF-8");
+%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page errorPage="error.jsp" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -31,14 +28,36 @@
             <th>Poznámka</th>
             <th>Počet výstupů</th>
           </tr>
-<%--          <% int i =0; %>   --%> 
-          <c:set var="cableHead" value="<%= request.getAttribute("newcab") %>" />
+          
+          
+<%--  
+          
+        <% Cablehead cab = (Cablehead)request.getAttribute("newCableHead"); %>
           <tr>  
-            <td>${cableHead.id}</td>
+            <td><%= cab.getId()%></td>
+            <td><%= cab.getName()%></td>
+            <td><%= cab.getBuilding()%></td>
+            <td><%= cab.getNote()%></td>
+            <td><%= cab.getOutputcount()%></td>
+          </tr>
+           
+       <% int i =0; %>   
+--%>
+          <c:set var="cableHead" target="Cablehead" value="<%= request.getSession().getAttribute("newCableHead") %>" />
+          <tr>  
+            <td>session ${cableHead.id}</td>
             <td>${cableHead.name}</td>
             <td>${cableHead.building}</td>
             <td>${cableHead.note}</td>
             <td>${cableHead.outputcount}</td>
+          </tr>
+          <c:set var="cable" target="Cablehead" value="<%= request.getParameter("newCableHead") %>" />
+          <tr>  
+            <td>request ${cable.id}</td>
+            <td>${cable.name}</td>
+            <td>${cable.building}</td>
+            <td>${cable.note}</td>
+            <td>${cable.outputcount}</td>
           </tr>
         </table>
             <%--
@@ -70,6 +89,8 @@
         </table>  
             --%>
       </div>
+      <a href="index.jsp" />Zpět na úvodní stranu.</a>
+    <p>Pokud nejsou vytvořené parametry správné, můžete <a href="formCableHead.jsp">přejít na editaci kabelu.</a></p>
     </div>
   </body>
 </html>
