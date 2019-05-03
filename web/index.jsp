@@ -48,66 +48,19 @@
     <a href="NewServlet">servlet: /NewServlet</a>
     
     <div id="infolist">
-
-    <h3><a href="#">Mary Adams</a></h3>
-    <div>
-        <img src="pix/maryadams.jpg" alt="Mary Adams">
-        <ul>
-            <li><h4>Vice President</h4></li>
-            <li><b>phone:</b> x8234</li>
-            <li><b>office:</b> 102 Bldg 1</li>
-            <li><b>email:</b> m.adams@company.com</li>
-        </ul>
-        <br clear="all">
+      <h3><a href="#">Mary Adams</a></h3>
+      <div>
+          <img src="pix/maryadams.jpg" alt="Mary Adams">
+          <ul>
+              <li><h4>Vice President</h4></li>
+              <li><b>phone:</b> x8234</li>
+              <li><b>office:</b> 102 Bldg 1</li>
+              <li><b>email:</b> m.adams@company.com</li>
+          </ul>
+          <br clear="all">
+      </div>
     </div>
-
-    <h3><a href="#">John Matthews</a></h3>
-    <div>
-        <img src="pix/johnmatthews.jpg" alt="John Matthews">
-        <ul>
-            <li><h4>Middle Manager</h4></li>
-            <li><b>phone:</b> x3082</li>
-            <li><b>office:</b> 307 Bldg 1</li>
-            <li><b>email:</b> j.matthews@company.com</li>
-        </ul>
-        <br clear="all">
-    </div>
-
-    <h3><a href="#">Sam Jackson</a></h3>
-    <div>
-        <img src="pix/samjackson.jpg" alt="Sam Jackson">
-        <ul>
-            <li><h4>Deputy Assistant</h4></li>
-            <li><b>phone:</b> x3494</li>
-            <li><b>office:</b> 457 Bldg 2</li>
-            <li><b>email:</b> s.jackson@company.com</li>
-        </ul>
-        <br clear="all">
-    </div>
-
-    <h3><a href="#">Jennifer Brooks</a></h3>
-    <div>
-        <img src="pix/jeniferapplethwaite.jpg" alt="Jenifer Applethwaite">
-        <ul>
-            <li><h4>Senior Technician</h4></li>
-            <li><b>phone:</b> x9430</li>
-            <li><b>office:</b> 327 Bldg 2</li>
-            <li><b>email:</b> j.brooks@company.com</li>
-        </ul>
-        <br clear="all">
-    </div>
-</div>
     
-    <div>Click ME!!!!</div>
-    <script>
-      $('div').hover(function (e){
-        $('div').css('color','red');
-      },(function (e){
-          $('div').css('color','blue');
-      })
-        
-    </script>
-    <a href="./newhtml.html">Odkaz na NEWHTML.html</a>
     <!-- footer start -->
     <%@include file="pices/footer.jsp" %>
     <!-- footer end -->
