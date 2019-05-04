@@ -1,9 +1,3 @@
-<%-- 
-    Document   : newjspindex
-    Created on : 1.4.2019, 12:16:06
-    Author     : Honza
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

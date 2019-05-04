@@ -18,11 +18,14 @@
               <td><input style="width: 100%" type='text' class='_buildingCable' value='${cable.building}' /></td>
               <td><input style="width: 100%" type='text' class='_noteCable' value='${cable.note}' /></td>
               <td>${cable.outputcount}</td>
+              <td><a id='sendData' href='#' >Provést změnu</a></td>
+<%--            
               <td><form action="editCableHead.jsp" method="post">
-                  <%--<input name="id" type="text" value="${cable.id}">--%>
+                  <%--<input name="id" type="text" value="${cable.id}">
                   <a id='sendData' href='#' >Odeslat data</a>
                   </form>
               </td>
+--%>
             </tr> 
           </c:forEach>  
         </table>  
