@@ -1,5 +1,5 @@
 var CABLE = {
-  init: function(id){
+  init: function(){
     var id=3;
     $.ajax({
     url:"getCableHead.jsp", data:{ id:id},
@@ -8,11 +8,11 @@ var CABLE = {
     }
     });
   },
-  setData: function(id, name, building, note){
+  toDelete: function(id){
     $.ajax({
-      url:"editCableHead.jsp", data:{ id:id, name:name, building:building, note:note},
+      url:"deleteCableHead.jsp", data:{ id:id},
       success: function(data){
-        alert("Byla upravena kabelová hlava:  "+data);
+        alert(data);
       }
     });
   }
@@ -22,11 +22,10 @@ $(document).ready(function() {
   $("#sendData").click(function(){  
   var tr = $(this).parents("tr");
   var id = tr.attr("data-bindID");
-  var name = tr.find("._nameCable").val();
-  var building = tr.find("._buildingCable").val();
-  var note = tr.find("._noteCable").val();
   console.log(id);
-    CABLE.setData(id, name, building, note);
+    CABLE.toDelete(id);
   });
 });
+
+
 

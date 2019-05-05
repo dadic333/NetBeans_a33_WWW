@@ -11,14 +11,14 @@
           <% int i =0; %>
           <c:set var="cables" value="<%= moje.appLayer.CableHeadBO.getAllCableHeads() %>"/>
           <c:forEach var="cable" items="${cables}">
-            <tr class='edit' data-bindID="${cable.id}">  
+            <tr class="edit" data-bindID="${cable.id}">  
               <td><%= i=i+1 %> </td>
               <td>${cable.id}</td>
               <td><input style="width: 100%" type='text' class='_nameCable' value='${cable.name}' /></td>
               <td><input style="width: 100%" type='text' class='_buildingCable' value='${cable.building}' /></td>
               <td><input style="width: 100%" type='text' class='_noteCable' value='${cable.note}' /></td>
               <td>${cable.outputcount}</td>
-              <td><a id='sendData' href='#' >Provést změnu</a></td>
+              <td><a id="sendData" href="#" >Provést změnu</a></td>
 <%--            
               <td><form action="editCableHead.jsp" method="post">
                   <%--<input name="id" type="text" value="${cable.id}">

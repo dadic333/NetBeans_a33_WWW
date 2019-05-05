@@ -1,8 +1,3 @@
-<%-- 
-    Document   : cableEdit
-    Created on : 1.4.2019, 19:26:20
-    Author     : Honza
---%>
 <%@page import="org.jboss.weld.context.http.HttpRequestContext"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>

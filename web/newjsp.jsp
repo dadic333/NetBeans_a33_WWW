@@ -13,6 +13,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/styl.css" rel="stylesheet">
+    <link href="css/formStyl.css" rel="stylesheet">
+
   </head>
   <body>
     <h1>Vytvořená kabelová hlava</h1>
@@ -89,8 +94,8 @@
         </table>  
             --%>
       </div>
-      <a href="index.jsp" />Zpět na úvodní stranu.</a>
-    <p>Pokud nejsou vytvořené parametry správné, můžete <a href="formCableHead.jsp">přejít na editaci kabelu.</a></p>
+      <a href="index.jsp" >Zpět na úvodní stranu.</a>
+    <p>Pokud nejsou vytvořené parametry správné, můžete <a href="formCableHead.jsp">přejít na editaci kabelových hlav.</a></p>
     </div>
   </body>
 </html>

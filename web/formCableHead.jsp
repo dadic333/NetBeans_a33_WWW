@@ -11,10 +11,7 @@
     <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/styl.css" rel="stylesheet">
     <link href="css/formStyl.css" rel="stylesheet">
-    
-    <script src='js/editCableHead.js'></script>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   
     <title>JSP Page</title>
   </head>
@@ -45,10 +42,23 @@
       </form>
     </div>
     <!-- footer start -->
+    <!-- footer start -->
+    <div class="container">
+      <h2>Vymazání kabelové hlavy</h2>
+      <form action="deleteCableHead.jsp" method="post">
+        <p><label for="id" class="item1">INDEX kabelové hlavy:</label>
+          <input name="id" id="id" type="text" required /></p>
+        <div class="mx-auto" style="width: 70px">  
+          <button class="btn btn-odeslat" type="submit" >Odstranit</button>
+        </div> 
+      </form>
+    </div>
+      
+    <!-- footer start -->
     <%@include file="pices/footer.jsp" %>
     <!-- footer end -->
-    <script defer src="js/jquery-3.3.1.min.js"></script>
-    <script defer src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src='js/editCableHead.js'></script>
 
   </body>
