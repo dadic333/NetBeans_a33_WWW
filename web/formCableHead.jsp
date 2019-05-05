@@ -12,19 +12,19 @@
     <link href="css/styl.css" rel="stylesheet">
     <link href="css/formStyl.css" rel="stylesheet">
 
-  
     <title>JSP Page</title>
   </head>
   <body id="body-pozadi">
-  <!-- Navbar start-->
-  <%@include file="pices/navbar.jsp" %>
-  <!-- Navbar end--> 
+    <!-- Navbar start-->
+    <%@include file="pices/navbar.jsp" %>
+    <!-- Navbar end--> 
     <div class="jumbotron">
       <h2>Výpis kabelů</h2>
       <div class="container">
         <%@include file="tables/tableCableHead.jsp" %>
       </div>
     </div>
+    <!-- vytvoření kabelové hlavy start -->  
     <div class="container">
       <h2>Založení nové kabelové hlavy</h2>
       <form action="newCableWithCableHeads.jsp" method="post">
@@ -41,8 +41,8 @@
         </div> 
       </form>
     </div>
-    <!-- footer start -->
-    <!-- footer start -->
+    <!-- vytvoření kabelové hlavy END -->
+    <!-- Vymazní Kabelové Hlavy start -->
     <div class="container">
       <h2>Vymazání kabelové hlavy</h2>
       <form action="deleteCableHead.jsp" method="post">
@@ -53,13 +53,12 @@
         </div> 
       </form>
     </div>
-      
+    <!-- Vymazní Kabelové Hlavy END -->
     <!-- footer start -->
     <%@include file="pices/footer.jsp" %>
     <!-- footer end -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src='js/editCableHead.js'></script>
-
   </body>
 </html>

@@ -3,13 +3,9 @@
 
 <%
   int id = Integer.parseInt(request.getParameter("id"));
-  System.out.println("Hodnota ID z formuláře:  "+id);
-  
   moje.entity.Cablehead toDelete = moje.appLayer.CableHeadBO.getCableheadByID(id);
   String name = toDelete.getName();
-  System.out.println("Hodnota NAME mazané Kabelové Hlavy:  "+name.toString()+" konec po name.");
   moje.appLayer.CableHeadBO.deleteCableHeadAndOutpustByCableHead(id);
-  System.out.println("----------------VYMAZÁNO----------------");
   Cablehead x = moje.appLayer.CableHeadBO.getCableheadByID(id);
 %>
 
