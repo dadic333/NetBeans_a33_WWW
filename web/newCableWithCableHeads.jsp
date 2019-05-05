@@ -1,3 +1,4 @@
+<%@page import="javax.persistence.metamodel.SetAttribute"%>
 <%@page import="org.jboss.weld.context.http.HttpRequestContext"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
@@ -27,10 +28,11 @@
   Cablehead newcab = moje.appLayer.CableHeadBO.createNewCaleHeadAndCHOutputs(name, building, note, outputCount);
   System.out.println("Vytvoření nové kabelové hlavy ÚSPĚŠNÉ.");
   
-  
   HttpSession sess = request.getSession();
   sess.setAttribute("newCableHead", newcab);
   request.setAttribute("newCableHead", newcab);
+  String neco = "neco";
+  request.setAttribute("key", neco);
 
   System.out.println("______________newcab_____________");
   System.out.println("name= "+newcab.getName()+"; building= "+newcab.getBuilding()+"; note= "+newcab.getNote());

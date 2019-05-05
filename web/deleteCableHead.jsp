@@ -1,3 +1,12 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%
+  int id = Integer.parseInt(request.getParameter("id"));
+  moje.appLayer.CableHeadBO.deleteCableHeadAndOutpustByCableHead(id);
+%>
+
+<%--
+
 <%@page import="moje.entity.Cablehead"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
@@ -8,8 +17,6 @@
   moje.appLayer.CableHeadBO.deleteCableHeadAndOutpustByCableHead(id);
   Cablehead x = moje.appLayer.CableHeadBO.getCableheadByID(id);
 %>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -33,3 +40,4 @@
     <a href="formCableHead.jsp">Přejdi na stránku editace Kabelových hlav.</a>
   </body>
 </html>
+--%>
