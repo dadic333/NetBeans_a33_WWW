@@ -9,5 +9,8 @@
     }
 
     button.onclick = secti;
+    
+    
+    let elem = document.getElementsByClassName()
   };
 

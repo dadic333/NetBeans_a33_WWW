@@ -45,13 +45,12 @@
     <!-- Vymazní Kabelové Hlavy start -->
     <div class="container">
       <h2>Vymazání kabelové hlavy</h2>
-      <form action="deleteCableHead.jsp" method="post">
-        <p><label for="id" class="item1">INDEX kabelové hlavy:</label>
-          <input name="id" id="id" type="text" required /></p>
+
+      <p><input name="deleteId" id="deleteId" type="number" required /></p>
         <div class="mx-auto" style="width: 70px">  
-          <button class="btn btn-odeslat" type="submit" >Odstranit</button>
+          <button class="btn btn-odeslat" ><a id="deleteCableHead" href="#" >Vymazat</a></button>
         </div> 
-      </form>
+
     </div>
     <!-- Vymazní Kabelové Hlavy END -->
     <!-- footer start -->
@@ -60,5 +59,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src='js/editCableHead.js'></script>
+    <script src="js/deleteCableHead.js"></script>
   </body>
 </html>

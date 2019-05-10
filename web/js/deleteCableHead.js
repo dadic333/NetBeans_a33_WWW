@@ -1,13 +1,4 @@
-var CABLE = {
-  init: function(){
-    var id=3;
-    $.ajax({
-    url:"getCableHead.jsp", data:{ id:id},
-    success: function(data){
-      console.log(data);
-    }
-    });
-  },
+var CABLEDEL = {
   toDelete: function(id){
     $.ajax({
       url:"deleteCableHead.jsp", data:{ id:id},
@@ -19,13 +10,11 @@ var CABLE = {
 };
   
 $(document).ready(function() {
-  $("#sendData").click(function(){  
-  var tr = $(this).parents("tr");
-  var id = tr.attr("data-bindID");
+  $("#deleteCableHead").click(function(){  
+  let id = document.getElementById("deleteId");
   console.log(id);
-    CABLE.toDelete(id);
+    CABLEDEL.toDelete(id);
   });
 });
-
 
 

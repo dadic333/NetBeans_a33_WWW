@@ -6,9 +6,10 @@
   int intId = Integer.parseInt(request.getParameter("id"));
 %>
 
-<% Cablehead ret =%>
-<%= new Cablehead()%>
-<%; %>
+<% 
+  Cablehead ret = %><%= moje.appLayer.CableHeadBO.getCableheadForJson(intId) %>;
+  
+%>
 <%--
 <%
     JSONObject json = new JSONObject();

@@ -1,6 +1,6 @@
 var CABLE = {
   init: function(id){
-    var id=3;
+    var id=4;
     $.ajax({
     url:"getCableHead.jsp", data:{ id:id},
     success: function(data){
@@ -29,4 +29,6 @@ $(document).ready(function() {
     CABLE.setData(id, name, building, note);
   });
 });
+
+
 
