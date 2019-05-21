@@ -64,10 +64,18 @@ function vytvorRadek(){
   return novyRadek;
 }
 
+function indexRadkuAktivniBunky(){
+    let cilHledani = tabulka.childNodes;
+    let hledanyPrvek = aktivniBunka.parentElement.parentElement;
+    return Array.prototype.indexOf.call(cilHledani, hledanyPrvek);
+}
+
 window.onload = function (){
   vytvorOvladaciTlacitka();
   vytvorVychoziTabulku();
 };
+
+
 
 
 

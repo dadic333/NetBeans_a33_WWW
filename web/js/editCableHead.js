@@ -2,7 +2,8 @@ var CABLE = {
   init: function(id){
     var id=4;
     $.ajax({
-    url:"getCableHead.jsp", data:{ id:id},
+    url:"getCableHead.jsp",
+    data:{ id:id},
     success: function(data){
       console.log(data);
     }
